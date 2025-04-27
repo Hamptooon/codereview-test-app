@@ -1,0 +1,46 @@
+.testResults {
+    background-color: #2c2c2c;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 1px solid #444;
+}
+
+.testSummary {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+    strong {
+        color: #00bfff;
+    }
+}
+
+.testDetail {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    background-color: #3a3a3a;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+
+    p {
+        margin: 0;
+    }
+
+    &.testPassed {
+        border-left: 4px solid #28a745;
+    }
+
+    &.testFailed {
+        border-left: 4px solid #dc3545;
+    }
+}
+
+.passIcon {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.failIcon {
+    color: #dc3545;
+    font-weight: bold;
+}
